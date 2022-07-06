@@ -6,8 +6,8 @@ import { hack_time } from "lib2.js"
 export async function main(ns) {
 	const server = server_data["n00dles"]
 	let term_busy_until = 0
-	// while (true) { // global/button to stop looping?
-	for (let i = 20; i > 0; i--) { // global/button to stop looping?
+	while (true) { // global/button to stop looping?
+	// for (let i = 20; i > 0; i--) { // global/button to stop looping?
 		const hack_lvl = ns.getHackingLevel() // 0.05 GB
 		const above_min = ns.getServerSecurityLevel("n00dles") - 1
 		const money = ns.getServerMoneyAvailable("n00dles") / 1_750_000
