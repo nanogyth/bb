@@ -1,10 +1,10 @@
 import { multipliers } from "data.js"
-import { usi, term, write_yield_data } from "d.js"
+import { usi, term, write_yield_data } from "lib.js"
 
 /** @param {NS} ns */
 export async function main(ns) {
 	await write_yield_data(ns, yield_server_data)
-	setTimeout(term, 0, "home; run big2.js")
+	setTimeout(term, 0, "home; run p0.js")
 }
 
 function* yield_server_data(ns) {
